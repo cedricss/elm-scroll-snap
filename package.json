@@ -1,0 +1,16 @@
+{
+  "name": "elm-scroll-snap",
+  "version": "1.0.0",
+  "description": "Scrollable containers with snapping",
+  "homepage": "https://cedricsoulas.com/elm/css/systems",
+  "author": "Cédric Soulas",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {},
+  "repository": "https://github.com/cedricss/elm-scroll-snap",
+  "keywords": [
+    "elm",
+    "scroll-snap",
+    "css"
+  ]
+}
