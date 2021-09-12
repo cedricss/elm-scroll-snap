@@ -14,7 +14,7 @@ If you are not using elm-css, use `Html.Styled.fromUnstyled` and `Html.Styled.to
 import Css exposing (LengthOrAuto, after, displayFlex, firstChild, marginLeft, minWidth, overflowX, pct, scroll, width)
 import Css.Global exposing (children, typeSelector)
 import Html.Styled exposing (Html, div)
-import Html.Styled.Attributes exposing (css)
+import Html.Styled.Attributes as Attributes exposing (css, id)
 
 
 {-| Create a container with horizontal scrolling. The most visible item is centered horizontally.
@@ -32,12 +32,15 @@ import Html.Styled.Attributes exposing (css)
 
 -}
 horizontal :
-    { itemWidth : { compatible | value : String, lengthOrMinMaxDimension : Css.Compatible, lengthOrAuto : Css.Compatible } }
+    { id : String
+    , itemWidth : { compatible | value : String, lengthOrMinMaxDimension : Css.Compatible, lengthOrAuto : Css.Compatible }
+    }
     -> List (Html msg)
     -> Html msg
 horizontal config items =
     div
-        [ css
+        [ id config.id
+        , css
             [ displayFlex
             , overflowX scroll
             , width (pct 100)

@@ -7,7 +7,7 @@ elm install cedricss/elm-scroll-snap
 ```
 
 This library is based on elm-css and accepts `Html.Styled.Html` items.
-If you are not using elm-css, use `Html.Styled.fromUnstyled` and `Html.Styled.toUnstyled to convert the items and the resulting container.
+If you are not using elm-css, use `Html.Styled.fromUnstyled` and `Html.Styled.toUnstyled` to convert the items and the resulting container.
 
 ## Containers
 
